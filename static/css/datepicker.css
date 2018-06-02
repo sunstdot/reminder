@@ -1,0 +1,104 @@
+.date-pickers {
+  width: 2220px;
+  padding: 5px;
+  position: relative; 
+}
+.date-pickers > input {
+  width: 100px;
+  height: 20px;
+  padding: 5px; 
+  background: transparent;
+  background-color: transparent;
+  border-radius: 10px;
+  outline: none;
+  overflow:hidden; 
+  resize:none;
+  color: #838B83;
+}
+.date-pickers .fade-enter-active, .date-pickers .fade-leave-active {
+  transition: all 0.5s; 
+}
+.date-pickers .fade-enter, .date-pickers .fade-leave-active {
+  opacity: 0;
+  transform: translateY(-10px); 
+}
+.date-pickers > div {
+  width: 100%;
+  border: 1px solid #EAEAEA;
+  border: 1px solid green;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px #eee;
+  background: white;
+  position: absolute;
+  top: 40px;
+  left: 0px;
+  z-index: 99; 
+}
+.date-pickers > div div.day-select {
+  display: flex;
+  padding: 5px 0;
+  height: 30px;
+  line-height: 30px;
+  color: #888888;
+  border-bottom: 1px solid #ccc; 
+}
+.date-pickers > div div.day-select input,
+.date-pickers > div div.day-select button {
+  border: none;
+  background: white;
+  text-align: center;
+  color: #888888;
+  cursor: pointer; 
+  width: 14px;
+}
+.date-pickers > div div.day-select > div:nth-child(1),
+.date-pickers > div div.day-select > div:nth-child(3) {
+  width: 20%; 
+}
+.date-pickers > div div.day-select > div:nth-child(2) {
+  width: 60%;
+  display: flex;
+  justify-content: center; 
+}
+.date-pickers > div div.day-select > div:nth-child(2) input:hover {
+  background: #eee; 
+}
+.date-pickers > div div.day-select > div:nth-child(2) input:nth-child(1) {
+  width: 50px; 
+}
+.date-pickers > div div.day-select > div:nth-child(2) input:nth-child(2) {
+  width: 30px; 
+}
+.date-pickers > div div.day-screen > div {
+  width: 220px;
+  padding: 0 5px;
+  display: flex;
+  font-size: 14px;
+  justify-content: flex-start;
+  flex-wrap: wrap; 
+}
+.date-pickers > div div.day-screen > div span {
+  width:30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  border-bottom: 1px solid #ccc; 
+}
+.date-pickers > div div.day-screen > div:nth-child(1) {
+  font-weight: bold;
+  background: #F8F8F8; 
+}
+.date-pickers > div div.day-screen > div:nth-child(2) span {
+  cursor: pointer;
+  color: black; 
+}
+.date-pickers > div div.day-screen > div:nth-child(2) span:hover, .date-pickers > div div.day-screen > div:nth-child(2) span.active {
+  background: #21A5EF;
+  color: white; 
+}
+.date-pickers > div div.day-screen > div:nth-child(2) span.previousMonth,
+.date-pickers > div div.day-screen > div:nth-child(2) span.nextMonth {
+color: #888888; 
+}
+
+/*# sourceMappingURL=style.css.map */
